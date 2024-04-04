@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/tablet_main.png) no-repeat 50% / cover;
+}
+.upto-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  line-height: 60px;
+  right: 30px;
+  bottom: 30px;
+}
+.component {
+  padding: 20px 50px;
+}
+.component h2 {
+  font-size: 1.8rem;
+  margin: 30px 0;
+}
+.component p {
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+.component img {
+  width: 100%;
+  margin: 20px 0;
+}
+.object-sec {
+  padding: 50px 80px;
+  overflow: hidden;
+  position: relative;
+}
+.object-sec .illustration {
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: calc(100% - 160px);
+  animation: drawing 1.3s infinite linear;
+}
+.title-wrap {
+  padding: 0 50px;
+}
+.swiper {
+  padding: 0 50px;
+}
+.ft-upper .ft-other {
+  display: block;
+}
+.ft-upper .ft-mobile {
+  display: none;
+}
+.ft-under {
+  padding: 0 20px;
+}
+
+/* footer */
+.ft-under {
+  padding: 0 50px;
+}

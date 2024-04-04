@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+/***** header *****/
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/mobile_main.png) no-repeat 50% / cover;
+  font-family: var(--font-en);
+}
+header .logo a {
+  width: 70%;
+  height: 100px;
+  background: url(../images/petplant_logo.svg) no-repeat 50% / contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-indent: -9999px;
+}
+header .pc-menu {
+  display: none;
+}
+header .main-text {
+  display: none;
+}
+.header-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.header-btns .side-menu-btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 25px;
+  text-indent: -9999px;
+  background: url(../images/hamburger.svg) no-repeat 50% / contain;
+  align-self: flex-start;
+  z-index: 1000;
+}
+.header-btns .side-btns {
+  display: flex;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1000;
+}
+.header-btns .side-btns .user-icon {
+  display: none;
+}
+.header-btns .side-btns.active .user-icon {
+  display: block;
+  width: 34px;
+  padding: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.header-btns .side-btns.active a {
+  font-size: 1.1rem;
+  display: none;
+}
+.header-btns .side-btns a {
+  text-align: end;
+  font-size: 1.2rem;
+}
+.side-menu {
+  display: none;
+}
+.side-menu.active {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 241, 1) 26%,
+    rgba(177, 177, 170, 1) 78%
+  );
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-menu .close-btn {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 25px;
+  background: url(../images/exit.svg) no-repeat 50% / cover;
+  text-indent: -9999px;
+}
+.side-menu .side-inner-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 30px;
+}
+/***** upto btn *****/
+.upto-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #3a3a3a;
+  border-radius: 200px;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+/***** contents *****/
+section {
+  margin: 90px 0;
+}
+.component {
+  padding: 0 24px;
+  overflow: hidden;
+}
+.component h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+.component p {
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+.component a {
+  width: 180px;
+  display: block;
+  border: 2px solid #3a3a3a;
+  border-radius: 80px;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-en);
+  font-size: 1.2rem;
+  margin: 30px 0;
+  transition: 0.3s;
+}
+.component a:hover {
+  color: #5c7449;
+  border-color: #5c7449;
+  transform: translateY(-5px);
+}
+.component img {
+  margin: 10px 0;
+}
+.object-sec {
+  padding: 30px 24px;
+  overflow: hidden;
+  position: relative;
+}
+.object-sec .mug-plant {
+  width: 100%;
+}
+.object-sec .illustration {
+  position: absolute;
+  top: 30px;
+  left: 26px;
+  width: calc(100% - 48px);
+  animation: drawing 1.3s infinite linear;
+}
+@keyframes drawing {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.title-wrap {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  padding: 0 24px;
+  margin: 30px 0;
+}
+.title-wrap a {
+  width: 25px;
+  display: block;
+  text-indent: -9999px;
+  background: url(../images/plus.svg) no-repeat 50% / contain;
+}
+.swiper {
+  padding: 0 24px;
+}
+.swiper .swiper-slide {
+  background: url(../images/smooth-white-plaster-wall.jpg) no-repeat 0% /
+    contain;
+}
+.swiper .swiper-slide {
+  width: 65%;
+}
+.swiper .swiper-slide strong {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #727272;
+  padding: 10px 0;
+}
+.swiper .swiper-slide p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
+/* footer */
+footer {
+  background-color: #a8a89f;
+  font-family: var(--font-ko);
+  font-weight: 500;
+  color: #474747;
+}
+.ft-upper img {
+  width: 100%;
+}
+.ft-upper .ft-other {
+  display: none;
+}
+.ft-under .ft-under-logo {
+  display: flex;
+  margin: 60px 10px 20px;
+}
+.ft-under .ft-under-logo h1 {
+  width: 200px;
+}
+.ft-under .ft-under-logo .logo a {
+  display: block;
+  background: url(../images/petplant_logo_light.svg) no-repeat 50% / contain;
+  text-indent: -9999px;
+  width: 100%;
+  height: 60px;
+}
+.ft-under .ft-under-logo > a {
+  text-indent: -9999px;
+}
+.ft-under .ft-under-logo .instagram {
+  background: url(../images/instagram.svg) no-repeat 50% / contain;
+  width: 25px;
+  line-height: 60px;
+  margin: 0 10px;
+}
+.ft-under .ft-under-logo .facebook {
+  background: url(../images/facebook.svg) no-repeat 50% / contain;
+  width: 25px;
+  line-height: 60px;
+  margin: 20px;
+}
+.ft-under .ft-under-cs {
+  margin: 20px 20px;
+}
+.ft-under .ft-under-cs h4 {
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
+.ft-under .ft-under-cs h3 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+  font-weight: 600;
+}
+.ft-under .ft-under-cs p {
+  padding: 5px 0;
+}
+.ft-under .ft-under-policy {
+  margin: 20px 20px;
+}
+.ft-under .ft-under-policy .policy::after {
+  content: " | ";
+}
+.ft-under .ft-under-info {
+  padding: 30px 20px;
+}
+.ft-under .ft-under-info li {
+  display: flex;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+.ft-under .ft-under-info li strong {
+  width: 50%;
+  font-weight: 600;
+}
+.ft-under .ft-under-info li p {
+  width: 60%;
+}
